@@ -1,1 +1,41 @@
+# Python 字节码 / 缓存
+__pycache__/
+*.py[cod]
+*$py.class
 
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 打包 / 构建产物
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 测试与类型检查缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志 / 临时文件
+*.log
+*.tmp
