@@ -7,7 +7,14 @@ print("=== 复利计算器 ===")
 
 # 1. 输入本金（PV）
 # float() 将用户输入的字符串转成小数
-pv = float(input("请输入本金（元）："))
+while True:
+    printer = float(input("请输入本金（元）："))
+    if printer < 0:
+        # 输入负数时提示并继续循环（重输）
+        print("本金不能为负，请重新输入。")
+    else:
+        # 输入合法，跳出循环
+        break
 
 # 2. 输入年利率（r），并校验不能为负数
 # while True 循环：只要输入不合法就一直要求重输
